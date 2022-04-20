@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-ssl": "next dev -p 3001 | local-ssl-proxy --source 3000 --target 3001",
     "dev-docker": "docker-compose -f docker-compose.dev.yml up",
     "build": "next build",
     "start": "next start",
@@ -21,6 +22,7 @@
     "@types/react-dom": "18.0.1",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "local-ssl-proxy": "^1.3.0",
     "typescript": "4.6.3"
   }
 }

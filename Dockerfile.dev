@@ -5,4 +5,4 @@ WORKDIR /home/next/appdev
 COPY yarn.lock .
 
 RUN yarn install --frozen-lockfile 
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "dev-ssl" ]
