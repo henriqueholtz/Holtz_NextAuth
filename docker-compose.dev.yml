@@ -9,3 +9,5 @@ services:
       - 3000:3000
     volumes:
       - .:/home/next/appdev
+    env_file:
+      - .env.dev
